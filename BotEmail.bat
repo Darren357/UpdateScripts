@@ -5,5 +5,5 @@ replace.cmd html.txt index.html
 
 
 cd C:\Darren\github\UpdateScripts\pusher 
-::gitpush.cmd
+gitpush.cmd
 
