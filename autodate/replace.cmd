@@ -15,9 +15,6 @@ for /f "tokens=*" %%a in ('findstr "TargetDate" %1 ') do set oldline=%%a
 set oldtime=%oldline:~13,21%
 set newtime=%datetime%
 
-echo %oldtime% %newtime%
-pause
-
 if exist %2 del %2
 ::Scripts
 @echo on
