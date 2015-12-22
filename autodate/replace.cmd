@@ -13,12 +13,12 @@ set datetime=%date% %time%
 ::Getting Old Date & Time
 for /f "tokens=*" %%a in ('findstr "TargetDate" %1 ') do set oldline=%%a
 set oldtime=%oldline:~13,21%
-set "newtime="%datetime%""
+set newtime=%datetime%
 
 if exist %2 del %2
 ::Scripts
 @echo on
-cscript replacescript.vbs %1 "%oldtime%" "%newtime%" >> %2
+cscript replacescript.vbs "%1" "%oldtime%" "%newtime%" >> %2
 
 ::Using cscript adds Microsoft info at the top 3 lines,
 ::So I hack it off

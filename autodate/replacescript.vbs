@@ -16,4 +16,5 @@ Do Until objFile.AtEndOfStream
     If InStr(strLine,stroldline)> 0 Then
     	strLine = Replace(strLine,stroldline,strnewline)
     End If
+    WScript.Echo strLine
 Loop
