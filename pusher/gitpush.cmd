@@ -8,6 +8,6 @@ copy /y C:\Darren\github\UpdateScripts\autodate\index.html C:\Darren\github\emai
 
 cd C:\Darren\github\emailpage
 
-git add index.html
+git add test.txt
 git commit -m "Beep Boop %datetime%"
 git push origin gh-pages
