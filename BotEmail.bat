@@ -2,8 +2,7 @@
 
 start /D "C:\Darren\github\UpdateScripts\autodate\" replace.cmd html.txt index.html
 
-pause
+timeout /t 10
 
-::cd C:\Darren\github\UpdateScripts\pusher 
-::gitpush.cmd
+start /D "C:\Darren\github\UpdateScripts\pusher" gitpush.cmd
 
